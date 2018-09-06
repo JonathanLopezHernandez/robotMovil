@@ -16,3 +16,7 @@ Robot features:
   ● Control lights: will have a function to be able to manage the lights of the home remotely.
 
   ● Remote control: it will have the function of being able to be controlled remotely, transmitting the video live.
+ 
+ 
+
+
