@@ -1,7 +1,7 @@
 
 # Autonomous robot with map creation and integrated home automation system
 
-Robot feature:
+Robot features:
 
   ● Creation of maps and autonomous navigation: the robot will be able to create a 2D map in an autonomous way, avoiding obstacles.
 
