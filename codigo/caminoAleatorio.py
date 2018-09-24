@@ -14,7 +14,9 @@ pos = "n"
 cuenta = 0
 camino = '['
 a = 110
+c = 110
 b = 290
+d = 290
 matriz = []
 
 with open('/home/pi/Desktop/matriz.csv') as csvfile:
@@ -167,15 +169,24 @@ while cuenta < 1000:
     distanceL = (TimeElapsedL * 34300) / 2
 
     time.sleep(1)
+
+    if(pos == "n"):
+        d = b-10
+    elif(pos == "s"):
+        d = b-10
+    elif(pos == "e"):
+        c = a+10
+    elif(pos == "o"):
+        c = a-10
 	
-    if distance > 30 and matriz [a][b] != "1":
+    if distance > 30 and matriz [c][d] != "1":
         top()
         GPIO.output(pinTop, 1)
         time.sleep(1)
         GPIO.output(pinTop, 0)
     else:
         num = int(randint(0, 1) )
-        if num < 1 and matriz [a][b] != "1":
+        if num < 1 and matriz [c][d] != "1":
             left()
             GPIO.output(pinLeft, 1)
             time.sleep(1)
